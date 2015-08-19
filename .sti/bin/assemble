@@ -10,29 +10,9 @@ cat <<EOF > ~/.m2/settings.xml
 
 <mirrors>
     <mirror>
-      <id>nrt-mirror-central</id>
-      <mirrorOf>central</mirrorOf>
-      <url>http://mocha.nrt.redhat.com/nexus/content/repositories/central/</url>
-    </mirror>
-    <mirror>
-      <id>nrt-mirror-jboss-eap-repository</id>
-      <mirrorOf>jboss-eap-repository</mirrorOf>
-      <url>http://mocha.nrt.redhat.com/nexus/content/repositories/enterprise-techpreview/</url>
-    </mirror>
-    <mirror>
-      <id>nrt-mirror-jboss-eap-plugin-repository</id>
-      <mirrorOf>jboss-eap-plugin-repository</mirrorOf>
-      <url>http://mocha.nrt.redhat.com/nexus/content/repositories/enterprise-techpreview/</url>
-    </mirror>
-    <mirror>
-      <id>nrt-mirror-jboss-community-repository</id>
-      <mirrorOf>jboss-community-repository</mirrorOf>
-      <url>http://mocha.nrt.redhat.com/nexus/content/repositories/jboss-public-releases/</url>
-    </mirror>
-    <mirror>
-      <id>nrt-mirror-jboss-community-plugin-repository</id>
-      <mirrorOf>jboss-community-plugin-repository</mirrorOf>
-      <url>http://mocha.nrt.redhat.com/nexus/content/repositories/jboss-public-releases/</url>
+      <id>nrt-mirror-public-redhat-jboss</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://mocha.nrt.redhat.com/nexus/content/repositories/public-redhat-jboss/</url>
     </mirror>
   </mirrors>
 
