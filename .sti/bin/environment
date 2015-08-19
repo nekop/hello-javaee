@@ -1,0 +1,1 @@
+JAVA_OPTS="-Xms64m -Xmx256m -XX:MaxPermSize=256m"
