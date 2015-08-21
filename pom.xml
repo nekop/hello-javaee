@@ -21,9 +21,9 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.nekop</groupId>
-  <artifactId>ee6web</artifactId>
+  <artifactId>hello-javaee</artifactId>
   <packaging>war</packaging>
-  <name>ee6web</name>
+  <name>hello-javaee</name>
   <version>1.0</version>
 
   <properties>
