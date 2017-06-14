@@ -16,8 +16,9 @@ for (String envName : env.keySet()) {
 HEADER:
 <jsp:scriptlet>
 <![CDATA[
-for (String headerName : request.getHeaderNames()) {
-    out.print(String.format("%s=%s%n", headerName, request.getHeader(headerName)));
+for (java.util.Enumeration<String> e = request.getHeaderNames(); e.hasMoreElements();) {
+   String headerName = e.nextElement();
+   out.print(String.format("%s=%s%n", headerName, request.getHeader(headerName)));
 }
 ]]>
 </jsp:scriptlet>
