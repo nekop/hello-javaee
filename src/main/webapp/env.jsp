@@ -22,4 +22,12 @@ for (java.util.Enumeration<String> e = request.getHeaderNames(); e.hasMoreElemen
 }
 ]]>
 </jsp:scriptlet>
+
+MISC:
+<jsp:scriptlet>
+<![CDATA[
+   out.print(String.format("%s=%s%n", "request.getServerName()", request.getServerName()));
+   out.print(String.format("%s=%s%n", "request.encodeRedirectURL(\"/\")", request.encodeRedirectURL("/"));
+]]>
+</jsp:scriptlet>
 </jsp:root>
