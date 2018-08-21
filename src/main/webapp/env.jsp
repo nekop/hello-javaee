@@ -27,6 +27,7 @@ MISC:
 <jsp:scriptlet>
 <![CDATA[
    out.print(String.format("%s=%s%n", "request.getServerName()", request.getServerName()));
+   out.print(String.format("%s=%s%n", "request.getRemoteAddr()", request.getRemoteAddr()));
    out.print(String.format("%s=%s%n", "response.encodeRedirectURL(\"/\")", response.encodeRedirectURL("/")));
 ]]>
 </jsp:scriptlet>
