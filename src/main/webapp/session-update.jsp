@@ -6,7 +6,7 @@
 ENV:
 <jsp:scriptlet>
 <![CDATA[
-com.example.TestSessionObject testObject = session.getAttribute("testObject");
+com.example.TestSessionObject testObject = (com.example.TestSessionObject)session.getAttribute("testObject");
 if (testObject != null) {
 out.println("Old:");
 out.println(testObject.toString());
